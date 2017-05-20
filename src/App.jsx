@@ -26,7 +26,6 @@ class App extends Component{
     .then(json=>{
       const artist = json.artists.items[0];
       this.setState({artist});
-
       FETCH_URL=`${ALBUM_URL}${artist.id}/top-tracks?country=US&`;
       fetch(FETCH_URL,{method:'GET'})
       .then(response => response.json())
@@ -66,11 +65,8 @@ class App extends Component{
             <Profile artist={this.state.artist}/>
             <Gallery tracks={this.state.tracks}/>
           </div>:
-        <div>
-      </div>
+          <div></div>
         }
-
-
       </div>
     )
   }

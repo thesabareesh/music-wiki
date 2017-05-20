@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import "./app.css";
-import Gallery from "./Gallery";
+
 class Profile extends Component{
 
   render(){

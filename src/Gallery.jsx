@@ -38,7 +38,6 @@ class Gallery extends Component{
    }
  }
 
- render
   render(){
     const { tracks } = this.props;
     return (
